@@ -1,0 +1,28 @@
+header {
+    height: 100px;
+    border-bottom: 1px solid #ddd;
+    .navigation {
+        width: 80%;
+        display: inline-block;
+        border-left: 1px solid #ddd; 
+    }
+    .listItems {
+        display: inline-block;
+        .subCat {
+            display: none;
+        }
+        &:hover{
+            .subCat {
+                display: block;
+            }
+        }
+    }
+    .action{
+        text-decoration: none;
+        color: #77787a;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

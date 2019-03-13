@@ -1,0 +1,21 @@
+.searchBar {
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    .searchInput {
+        width: 100%;
+        border: transparent;
+        background: transparent;
+        padding: 0 16px;
+    }
+    .searchLogo {
+        position: absolute;
+        left: -10px;
+        bottom: 4px;
+    }
+}
+svg:not(:root) {
+    margin: 0 8px;
+}

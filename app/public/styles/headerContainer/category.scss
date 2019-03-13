@@ -1,0 +1,18 @@
+.category{
+    height: 69px;
+    padding: 15px 32px;
+    display: flex;
+    align-items: center;
+}
+.categoryList {
+    margin: 0;
+    width: 50%;
+    display: inline-block;
+    .listItems {
+        padding-right: 40px;
+        font-size: 12px;
+        .action:hover {
+            color: #ee4060;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.joinUstitle {
+    font-weight: bolder;
+    font-size: x-large;
+    color: #484b4e;
+    text-align: center;
+}
+
+@media (min-width: 768px)
+{
+    .joinUsModal .modal-dialog {
+        width: 60%;
+        margin: 30px auto;
+    }
+
+    .joinUsModal .btn-wrapper .button.col-md-6 {
+        width:48%;
+    }
+    
+    .joinUsModal .btn-wrapper .button.col-md-6:first-child {
+        margin:0 10px 0 0;
+    }
+}
+
+@media (max-width: 767px)
+{
+    .joinUsVerticalLine .joinUsNow {
+        padding: 16px;
+    }
+
+    .joinUsVerticalLine {
+        display: block;
+    }
+}
+
+.joinUsModal .modal-content {
+    background-color: #f1f5f8
+
+}
+
+.joinUsNow {
+    padding: 40px;
+}
+
+.joinUsNow p, .leftCol, .rightCol {
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.joinUsModal Button {
+    border-radius: 0;
+}
+
+.joinUsVerticalLine {
+    border-right: 1px solid #6c757d;
+    position: relative;
+    top: 0;
+  }
+
+.joinUsModal img {
+    width: 100%;
+}
+
+.joinUsModal .modal-body {
+    padding: 0px;
+}
+
+.joinUsModal button {
+    background: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #b1acac;
+}
+
+.joinUsModal p {
+    color: #b1acac;
+}
+
+//Social Login CSS
+.googleLogin {
+    margin-left: 0px; 
+  }
+
+.facebookLogin {
+    margin-left: 100px;
+}
+

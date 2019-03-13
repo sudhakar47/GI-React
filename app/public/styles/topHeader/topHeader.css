@@ -1,0 +1,37 @@
+.headertopBar{border-bottom: 1px solid #EEE;}
+.headertopBar-content{padding: 20px 0px 20px 0px;}
+.logo-with-gradient {width: 50px;height: 35px;}
+.logo-text {margin-left: 10px;width: 70px;height: 35px;}
+
+ul.header__topBarIconList li{float:left;margin-right: 20px;}
+ul.header__topBarIconList li:hover svg{fill:#ed7745}
+ul.header__topBarIconList li:last-child{margin-right:0px;}
+.header-icon-link{position:relative;}
+.header-icon-link span.badge-count{background: #999999;position: absolute; white-space: nowrap;
+    box-shadow: 0 0 0 1px #FFFFFF;display: -webkit-box;display: -webkit-flex; display: -ms-flexbox;display: flex;
+    -webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;
+    -webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;color: #FFFFFF;border-radius: 3px; pointer-events: none; padding: 0 3px;font-size: 14px;top: -8px;right: -10px;height: 16px;min-width: 16px;line-height: 16px;}
+	
+	.header-icon-link span.badge-count.bg-color{background-color:#ed7745;}
+	nav{font-family: 'MrEavesXLModOT-Bold';}
+nav.main-navigation .topnav{position: relative;}
+nav.main-navigation .topnav  li{    color: #000000;float:left;display:block;}
+nav.main-navigation .topnav  li:first-child a{margin-left: 0px;}
+nav.main-navigation .topnav  li a{color: #000000;margin: 0px 21px;display: block;border-bottom: 2px solid transparent;line-height: 44px;}
+nav.main-navigation .topnav  li a:hover{text-decoration:none;border-bottom:2px solid #ED7745;color:#ED7745}
+.nav-wrapper{border-bottom:1px solid #eee;}
+
+
+
+/* ----------------- */
+/* .modal-container {
+   position: relative;
+   
+}
+.modal-container .modal, .modal-container .modal-backdrop {
+    position: absolute;
+} */
+
+
+/* ------------------*/
+

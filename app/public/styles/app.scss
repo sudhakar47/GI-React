@@ -1,0 +1,209 @@
+
+
+
+
+/* Godrej Global CSS */
+$colorblack:#424b5a;
+$colorwhite:#fff;
+$colorgrey:#a1aeb7;
+
+body{font-family: open sans,sans-serif; font-size: 14px;color:$colorblack}
+*{margin:0px; padding:0px}
+ul li{list-style: none;}
+ul{margin:0px; padding:0px}
+a{color:$colorblack}
+section{padding:40px 0}
+.btnClassborder{border: 1px solid #424b5a;padding: 5px 30px;font-size: 14px;text-transform: uppercase;line-height: 33px;border-radius: 4px;}
+p{ line-height: 24px} 
+h1,h2,h3,h4,h5,h6{}
+h4{font-weight: bold}
+.form-control:focus { color: #495057; background-color: #fff; border-color: #a1aeb7; outline: 0; box-shadow: 0 0 0 0.2rem rgba(159, 159, 159, 0.2) !important;
+}
+.slider{ img{width:100%}}
+.img {
+    width: 100%;
+}
+.btn-border {
+    border: 1px solid $colorblack;
+    padding: 5px 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 33px;
+    border-radius: 4px;   
+}
+.btn-bg{ background: $colorblack;border:none;cursor:pointer;color: #fff;
+    padding: 5px 30px;font-size: 14px;text-transform: uppercase; line-height: 33px;
+    border-radius: 4px;
+  &:hover{color:#fff;background: $colorblack;}
+}
+
+
+
+    /***-------Comman form css---------***/
+.modal-backdrop{background-color: rgba(0, 0, 0, 0.7);}
+.modal-dialog{
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    .close {
+        position: absolute; right: 20px;z-index: 9;background: #fff;width: 30px;border-radius: 50%;
+        opacity: 1;height: 30px;top: 20px;color: #6d6d6d;font-weight: normal;font-size:16px;
+        &:hover{background:#fff;color: #000}
+    }  
+.modal-wrapper {   
+    width: 800px;
+    height: 348px;
+    padding: 50px 0;
+    font-weight: 600;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -174px;
+    background: #f1f5f8;     
+    .form-center{
+         margin:0 auto;max-width: 49%; 
+         font-weight: normal;   
+    .text{color:$colorgrey; font-weight: normal;}
+    .error-msg{  position: absolute;color:#fd1f3b;font-weight: normal;font-size: 12px; line-height: 13px;min-height: 33px;bottom:-6px}
+    .label{
+        color:$colorgrey;text-transform: uppercase;
+        background: transparent;
+        margin: 0;
+        display: block;
+        text-align: left;
+        padding: 0 0 10px 0;
+    }
+    .heading{
+        text-align: center;
+        font-weight: bold;
+        text-transform: capitalize;
+        padding:0 0 30px 0;
+        margin: 0;
+        color: #424b5a;
+    }
+    .form-control{box-shadow: none; height:40px}
+    .form-div{position: relative;}
+    input,button{margin:0 0 15px 0}
+    }   
+}  
+}
+
+
+@media(max-width: 768px) {
+    .modal-dialog{        
+     .modal-wrapper{width: 500px; margin-left: -250px;}
+   }
+}
+
+  @media(max-width: 580px) {
+    .modal-dialog{ 
+        .modal-wrapper{
+            width: 400px; margin-left: -200px;
+            .form-center{ max-width: 80%;}
+        }        
+     }  
+    }
+
+
+
+/* 5 Columns for footer
+-------------------------------------*/
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 { position: relative;min-height: 1px;padding-right: 10px;padding-left: 10px;}
+.col-xs-15 {width: 20%;float: left;}
+
+@media (min-width: 768px) { .col-sm-15 {width: 20%;float: left; }}
+@media (min-width: 992px) {.col-md-15 { width: 20%;float: left; }}
+@media (min-width: 1200px) {.col-lg-15 { width: 20%;float: left;}}
+
+
+/*-------Responsive @media query-------*/
+@media(max-width:1024px){}
+@media (min-width: 768px){
+    .col-lg-15 , .col-md-15, .col-sm-15 {  width: 18%;  float: left;}
+}
+@media(max-width:991px){
+    .headerIconlistwid{    
+        /* position: absolute !important;  top: 39px; right: 13%; */
+      }
+
+    .categoryNav {width: 100% !important; margin: 0 auto; }
+
+
+    /*footer col*/
+    .col-lg-15, .col-md-15, .col-sm-15 {  width: 25%;  float: left;}
+    footer .col5 > div:last-child {width: 50%; }
+
+
+    .search-mob{display:block}
+    .headerIconlist > li:first-child{display:none}
+    .search-mob .searchBox { position: fixed !important;top: 31px !important; width: 100%;padding: 9px;left: 0 !important; right: 0 !important;
+        transform: translate3d(0px, 58px, 0px) !important;
+    }
+    .searchBox button.search{left: 10px;top: 8px;}
+    .searchBox button.imgupload{right: 10px;top: 8px;}
+}
+
+
+@media(max-width:767px){
+    
+    
+    .hamburger{display: block}
+    .logohamburgerWrap .hamburger,.logohamburgerWrap .logo{float: left;}
+    .logohamburgerWrap .logo{width:70%}
+
+    .categoryNavcol-hidemob{    position: absolute !important; top: 0; left: 0;}
+    .headerIconlistwid{position: absolute !important;right:10%}
+   
+    .col-lg-15, .col-md-15, .col-sm-15 {width: 100%;float: left; }
+    .taber.collapsed:after { content: "\f107"; float: right;font-size: 22px;position: absolute;	right: 10px;top: 5px;color: #fff;font-family: 'FontAwesome';}
+	.taber:after {  content: "\f106"; float: right;	font-size: 22px;position: absolute;right: 10px;	top: 5px;color: #fff;	font-family: 'FontAwesome';}
+    footer {padding: 0px 0;}
+    footer .container{width:100%;max-width: 100%}
+    footer .col5 > div:last-child {width: 100%;}
+    footer ul li { padding: 0px 0;}
+
+    .taber {border-bottom: 1px solid #576376; cursor: auto; }
+    footer .col5 h3 {background: #424b5a;color: #fff; text-align: left; padding: 10px 20px;text-transform: uppercase;margin:0}
+    footer .col5 > [class*="col-"] { padding: 0; }
+    footer .col5 ul.linklist > li > a { padding: 10px 20px; color: #424b5a; border-bottom: 1px solid #586376;display: block;font-weight: 600; }
+    .newSubscribe,.social-Link{padding:10px 20px}
+    .social-Link ul{max-width: 163px; margin: 0 auto;}
+}
+
+@media(max-width:680px){
+	
+}
+@media(max-width:590px){
+    .col-lg-15, .col-md-15, .col-sm-15 {width: 100%; float: left; }
+    footer .col5 > div:last-child {width: 100%; }
+}
+
+@media(max-width:567px){
+	.productBox .imgBox{max-height: auto}
+}
+
+@media(max-width:400px){
+	
+}
+
+@media(max-width:380px){
+    .logohamburgerWrap .logo {width: 65%; }
+    header .left-link ul li a{font-size: 14px;}
+    header .left-link ul li{padding-right: 5px;}
+}
+@media(max-width:340px){
+	
+}
+
+@media(max-width:321px){
+	
+}
+
+
+ 
