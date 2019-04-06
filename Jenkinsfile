@@ -1,10 +1,5 @@
 pipeline {
-  environment {
-    registry = "sudhakardvps/sample"
-    registryCredential = 'dockerhub'
-    dockerImage = ''
-  }
-    agent {
+   agent {
         docker {
             image 'node:10.15.3-alpine'
             args '-p 1000:1000'
