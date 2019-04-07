@@ -1,14 +1,21 @@
 pipeline {
-   agent {
-        dockerfile true
-    }
-  
+  agent none
   stages {
-        stage('Test') {
-            steps {
-                sh 'node --version'
-            }
-        }
+    stage('dockerfile Install') {
+      agent {
+        dockerfile true
+      }
+      steps {
+        sh 'npm --version'
+        sh 'node --version'
+      }
     }
+    stage('Docker Build') {
+      agent any
+      steps {
+        sh 'docker build -t shanem:latest .'
+      }
+    }
+  }
 }
 
